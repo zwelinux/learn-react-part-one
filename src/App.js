@@ -6,6 +6,7 @@ import ImportAndExport from "./ImportAndExport"
 import { MiniImportAndExport } from "./ImportAndExport"
 import JavaScriptInJSXWithCurlyBraces from "./JavaScriptInJSXWithCurlyBraces"
 import ThemedComponent from "./ThemedComponent"
+import MyProps from "./MyProps"
 
 const App = () => {
   return(
@@ -92,6 +93,18 @@ const App = () => {
           Theme ကိုလွယ်လွယ်ကူကူဆင်လို့ရတယ်။ 
         "
       />
+      <br />
+
+      <h3>1.4. Passing Props To A Component</h3>
+      <div className="demo">
+        <MyProps />
+      </div>
+      <Accordion
+        content="
+          JavaScript Objects တွေကို {{ object }} ထည့်ပြတယ်။​
+        "
+      />
+      <br />
 
 
       <br />
