@@ -7,6 +7,9 @@ import { MiniImportAndExport } from "./ImportAndExport"
 import JavaScriptInJSXWithCurlyBraces from "./JavaScriptInJSXWithCurlyBraces"
 import ThemedComponent from "./ThemedComponent"
 import MyProps from "./MyProps"
+import RealProps from "./RealProps"
+import DefaultValueProps from "./DefaultValueProps"
+import ForwardingPropsWithJSXSpreadSyntax from "./ForwardingPropsWithJSXSPreadSyntax"
 
 const App = () => {
   return(
@@ -106,6 +109,42 @@ const App = () => {
       />
       <br />
 
+      <h2>6.5.2023</h2>
+
+      <h3>1.4.2 Passing Props To A Component ~ Using Props</h3>
+      <div className="demo">
+        <RealProps title="ပရော့ဒေါ့ တိုက်တယ်လ်" content="ပရော့ဒေါ့ ကွန်းတန့်န်" />
+      </div>
+      <Accordion
+        content="
+          props ချည်းသက်သက်ဆို (props) 
+          let title = props.title 
+        "
+      />
+      <br />
+
+      <h3>1.4.3 Passing Props To A Component ~ Using Default Props</h3>
+      <div className="demo">
+        <DefaultValueProps sccName="WWS" />
+        <DefaultValueProps sccName="WWH" link="https://waaneizasharing.xyz" />
+      </div>
+      <Accordion
+        content="
+          ({ sccName, companyLink = 'waaneiza.com' })
+        "
+      />
+      <br />
+
+      <h3>1.4.4 Forwarding Props with JSX Spread Syntax</h3>
+      <div className="demo">
+        <ForwardingPropsWithJSXSpreadSyntax />
+      </div>
+      <Accordion
+        content="
+          ဆိုလိုချင်တာ အဲ့လို လျှောက်ပြီး စတန့်သိပ်မထွင်နဲ့ အကုန်အိပ်ရေးတွေ ပျက်ကုန်မယ်။​ ရေးနေကျအတိုင်းရေး ဒါမှမဟုတ် အောက်ကလို children ကိုသုံးပြီးရေးချင်ရင်ရေး 
+        "
+      />
+      <br />
 
       <br />
     </div>
