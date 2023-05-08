@@ -13,6 +13,10 @@ import ThirdProps from "./ThirdProps"
 import ChildrenProps from "./ChildrenProps"
 import PropsChangedOvertime from "./PropsChangedOvertime"
 import ConditionalRendering from "./ConditionalRendering"
+import LogicalAnd from "./LogicalAnd"
+import RenderingListComponent from "./RenderingListComponent"
+import GoodListArray from "./GoodListArray"
+import FullRenderingList from "./FullRenderingList"
 
 const App = () => {
   return(
@@ -177,16 +181,67 @@ const App = () => {
       />
       <br />
 
-      <h3>1.6 Conditonal Rendering</h3>
+      <h3>1.6 Conditonal Rendering with if else or ternary Operator</h3>
       <div className="demo">
         <ConditionalRendering />
       </div>
       <Accordion 
         content="
           ရိုးရိုးရှင်းရှင်း if else 
-          နဲသုံးမလား Ternary Operator သုံးမလားပဲ Your Call 
+          နဲသုံးမလား Ternary Operator သုံးမလားပဲ Your Call ? : 
         "
       />
+      <br />
+
+      <h3>1.6.2 Conditonal Rendering with Logical And Operator</h3>
+      <div className="demo">
+        <LogicalAnd />
+      </div>
+      <Accordion 
+        content="
+          LogicalAnd Usage && 
+        "
+      />
+      <br />
+
+      <h3>1.7 Rendering List with simple mapping without id key index</h3>
+      <div className="demo">
+        <RenderingListComponent />
+      </div>
+      <Accordion 
+        content="
+          ဒါလေးကတော့ id မပါတဲ့ simple array လေးပါ။​ Browser ကို inspect ထောက်ကြည့်ရင် Error တချို့ကို တွေ့ရပါလိမ့်မယ်။​ 
+        "
+      />
+      <br />
+
+      <h3>1.7.2 Rendering List with filtering without id key indexing </h3>
+      <div className="demo">
+        <GoodListArray />
+      </div>
+      <Accordion 
+        content="
+          အရင်ဆုံးခွဲထုတ်ပြီးမှ mapping နဲ့ ပြန်ထုတ်ပါ။​ 
+        "
+      />
+      <br />
+
+      <h3>1.7.3 Rendering List with full key id indexing </h3>
+      <div className="demo">
+        <FullRenderingList />
+      </div>
+      <Accordion 
+        content="
+          key ကို <></> ထဲထည့်လို့မရဘူး
+          Fragment ထဲထည့်ရင်ရတယ်။ 
+
+          ပြီးတော့ အဲ့ fragment က react ကနေသွင်းမှရမှာ
+
+          import { Fragment } from 'react';
+
+        "
+      />
+      <br />
 
       <br />
     </div>
