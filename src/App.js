@@ -79,7 +79,7 @@ const App = () => {
       <Accordion
         content="
           render လုပ်တဲ့ အခါ
-          JavaScript Data တွေကို 
+          JavaScript Logic တွေကို 
           { jsData } ထဲထည့်ပြီးပြရမယ်။​
 
           css style သာဆိုရင် 
