@@ -11,6 +11,7 @@ import DefaultValueProps from "./DefaultValueProps"
 import ForwardingPropsWithJSXSpreadSyntax from "./ForwardingPropsWithJSXSPreadSyntax"
 import ThirdProps from "./ThirdProps"
 import ChildrenProps from "./ChildrenProps"
+import PropsChangedOvertime from "./PropsChangedOvertime"
 
 const App = () => {
   return(
@@ -160,6 +161,18 @@ const App = () => {
         content="
           Gatsby မှာ ထည့်သုံးတယ်။ 
         "
+      />
+      <br />
+
+      <h3>1.4.6 How Props Change Over Time</h3>
+      <div className="demo">
+        <PropsChangedOvertime someData="late game app performance " />
+      </div>
+      <Accordion
+        content="
+          Late Game Plan လဲဖြစ်တဲ့ အပြင်ကိုမှ 
+          State နဲ့ ပါဆက်စပ်ရမှာဆိုတော့ အခုအချိန် ဘာမှမပြောလိုသေးပါ​။ 
+        " 
       />
 
       <br />
