@@ -5,10 +5,11 @@ const ThemedComponent = () => {
 
     const myTheme = {
         theme: {
-            backgroundColor: '#efefef',
+            backgroundColor: 'lightgreen',
             color: '#4d4d4d',
-            fontFamily: 'lucida console',
-            fontSize: '1.3em'
+            fontFamily: 'verdana',
+            fontSize: '1.3em',
+            padding: '20px'
         }
     }
 

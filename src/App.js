@@ -6,10 +6,10 @@ import ImportAndExport from "./ImportAndExport"
 import { MiniImportAndExport } from "./ImportAndExport"
 import JavaScriptInJSXWithCurlyBraces from "./JavaScriptInJSXWithCurlyBraces"
 import ThemedComponent from "./ThemedComponent"
-import MyProps from "./MyProps"
 import RealProps from "./RealProps"
 import DefaultValueProps from "./DefaultValueProps"
 import ForwardingPropsWithJSXSpreadSyntax from "./ForwardingPropsWithJSXSPreadSyntax"
+import ThirdProps from "./ThirdProps"
 
 const App = () => {
   return(
@@ -100,7 +100,7 @@ const App = () => {
 
       <h3>1.4. Passing Props To A Component</h3>
       <div className="demo">
-        <MyProps />
+        <ThirdProps />
       </div>
       <Accordion
         content="
@@ -144,7 +144,22 @@ const App = () => {
           ဆိုလိုချင်တာ အဲ့လို လျှောက်ပြီး စတန့်သိပ်မထွင်နဲ့ အကုန်အိပ်ရေးတွေ ပျက်ကုန်မယ်။​ ရေးနေကျအတိုင်းရေး ဒါမှမဟုတ် အောက်ကလို children ကိုသုံးပြီးရေးချင်ရင်ရေး 
         "
       />
+      <Accordion
+        content="
+          နားလည်အောင်လို့တော့ ထည့်သုံးထားလိုက်ပါတယ်။ သုံးဖို့တော့ သိပ်အာသီသမရှိသေး 
+        "
+      />
       <br />
+
+      <h3>1.4.5 Passing JSX as children</h3>
+      <div className="demo">
+
+      </div>
+      <Accordion
+        content="
+          Gatsby မှာ ထည့်သုံးတယ်။ 
+        "
+      />
 
       <br />
     </div>
