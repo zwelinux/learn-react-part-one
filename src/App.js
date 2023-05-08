@@ -10,6 +10,7 @@ import RealProps from "./RealProps"
 import DefaultValueProps from "./DefaultValueProps"
 import ForwardingPropsWithJSXSpreadSyntax from "./ForwardingPropsWithJSXSPreadSyntax"
 import ThirdProps from "./ThirdProps"
+import ChildrenProps from "./ChildrenProps"
 
 const App = () => {
   return(
@@ -153,7 +154,7 @@ const App = () => {
 
       <h3>1.4.5 Passing JSX as children</h3>
       <div className="demo">
-
+        <ChildrenProps />
       </div>
       <Accordion
         content="
