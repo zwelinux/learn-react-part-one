@@ -12,6 +12,7 @@ import ForwardingPropsWithJSXSpreadSyntax from "./ForwardingPropsWithJSXSPreadSy
 import ThirdProps from "./ThirdProps"
 import ChildrenProps from "./ChildrenProps"
 import PropsChangedOvertime from "./PropsChangedOvertime"
+import ConditionalRendering from "./ConditionalRendering"
 
 const App = () => {
   return(
@@ -100,7 +101,7 @@ const App = () => {
       />
       <br />
 
-      <h3>1.4. Passing Props To A Component</h3>
+      <h3>1.5. Passing Props To A Component</h3>
       <div className="demo">
         <ThirdProps />
       </div>
@@ -113,7 +114,7 @@ const App = () => {
 
       <h2>6.5.2023</h2>
 
-      <h3>1.4.2 Passing Props To A Component ~ Using Props</h3>
+      <h3>1.5.2 Passing Props To A Component ~ Using Props</h3>
       <div className="demo">
         <RealProps title="ပရော့ဒေါ့ တိုက်တယ်လ်" content="ပရော့ဒေါ့ ကွန်းတန့်န်" />
       </div>
@@ -125,7 +126,7 @@ const App = () => {
       />
       <br />
 
-      <h3>1.4.3 Passing Props To A Component ~ Using Default Props</h3>
+      <h3>1.5.3 Passing Props To A Component ~ Using Default Props</h3>
       <div className="demo">
         <DefaultValueProps sccName="WWS" />
         <DefaultValueProps sccName="WWH" link="https://waaneizasharing.xyz" />
@@ -137,7 +138,7 @@ const App = () => {
       />
       <br />
 
-      <h3>1.4.4 Forwarding Props with JSX Spread Syntax</h3>
+      <h3>1.5.4 Forwarding Props with JSX Spread Syntax</h3>
       <div className="demo">
         <ForwardingPropsWithJSXSpreadSyntax />
       </div>
@@ -153,7 +154,7 @@ const App = () => {
       />
       <br />
 
-      <h3>1.4.5 Passing JSX as children</h3>
+      <h3>1.5.5 Passing JSX as children</h3>
       <div className="demo">
         <ChildrenProps />
       </div>
@@ -164,15 +165,27 @@ const App = () => {
       />
       <br />
 
-      <h3>1.4.6 How Props Change Over Time</h3>
+      <h3>1.5.6 How Props Change Over Time</h3>
       <div className="demo">
         <PropsChangedOvertime someData="late game app performance " />
       </div>
       <Accordion
         content="
-          Late Game Plan လဲဖြစ်တဲ့ အပြင်ကိုမှ 
-          State နဲ့ ပါဆက်စပ်ရမှာဆိုတော့ အခုအချိန် ဘာမှမပြောလိုသေးပါ​။ 
+        Props are read-only snapshots in time: every render receives a new version of props.
+        You can not change props. When you need interactivity, you will need to set state.
         " 
+      />
+      <br />
+
+      <h3>1.6 Conditonal Rendering</h3>
+      <div className="demo">
+        <ConditionalRendering />
+      </div>
+      <Accordion 
+        content="
+          ရိုးရိုးရှင်းရှင်း if else 
+          နဲသုံးမလား Ternary Operator သုံးမလားပဲ Your Call 
+        "
       />
 
       <br />
